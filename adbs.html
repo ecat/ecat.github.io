@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QW05P0D2WL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QW05P0D2WL');
+</script>
+
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Optimization of Quantitative MRI Sequences Using Automatic Differentiation of Bloch Simulations (adbs) </title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">INFO</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="biography.html">Biography</a></div>
+<div class="menu-category">SOFTWARE</div>
+<div class="menu-item"><a href="adbs.html" class="current">adbs</a></div>
+<div class="menu-item"><a href="rejection.html">dwi rejection</a></div>
+<div class="menu-category">PERSONAL</div>
+<div class="menu-item"><a href="hobbies.html">Hobbies</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Optimization of Quantitative MRI Sequences Using Automatic Differentiation of Bloch Simulations (adbs) </h1>
+</div>
+<p>A python library for optimizing the Cramér-Rao Lower Bound (CRLB) of quantitative MRI sequences is <a href="https://github.com/ecat/adbs">available here</a>. </p>
+<p>Since the CRLB depends on the Jacobian of the signal with respect to the parameters of interest, we can use automatic differentiation (widely used in deep learning) and a simple Bloch simulation to efficiently compute the CRLB for any sequence that can be simulated. Furthermore, we can use automatic differentiation to compute the gradient of the CRLB objective with respect to sequence parameters (flip angle, TE, etc). <b>This allows us to optimize sequences without an analytical expression for the magnetization.</b></p>
+<p>This library provides implementations of the standard Bloch simulation operations (relaxation, RF, gradient spoiling) for use in automatic differentiation and examples of quantitative sequences that were optimized using this library.</p>
+<p>For Magnetic Resonance Fingerprinting, automatic differentiation allows us to compute the CRLB objective and the gradient of the CRLB objective very efficiently. Our implementation converges roughly 30 <img class="eq" src="eqs/6179933649063709984-130.png" alt="times" style="vertical-align: -0px" /> faster in terms of CPU hours and requires 10 <img class="eq" src="eqs/6179933649063709984-130.png" alt="times" style="vertical-align: -0px" /> fewer lines of code (when compared to analytically calculating CRLB).</p>
+<p><b>Lee PK</b>, Watkins LE, Anderson TI, Buonincontri G, Hargreaves BA. “Flexible and Efficient Optimization of Quantitative Sequences using Automatic Differentiation of Bloch Simulations,” Magnetic Resonance in Medicine. May 2019. <a href="https://doi.org/10.1002/mrm.27832">doi.org/10.1002/mrm.27832</a></p>
+<div id="footer">
+<div id="footer-text">
+</div>
+</div>
+</td>
+</tr>
+</table>
+
