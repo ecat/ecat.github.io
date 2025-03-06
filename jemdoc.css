@@ -17,6 +17,30 @@ body {
     color: black;
 }
 
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 #layout-menu {
     /*background: #DAD7CB; /*black;*/
     background: #f8f6ea; /* Sandstone 20% */
