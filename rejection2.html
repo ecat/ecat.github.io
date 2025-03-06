@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QW05P0D2WL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QW05P0D2WL');
+</script>
+
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Diffusion-Prepared Imaging with Amplitude Navigation</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">INFO</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="biography.html">Biography</a></div>
+<div class="menu-category">SOFTWARE</div>
+<div class="menu-item"><a href="adbs.html">adbs</a></div>
+<div class="menu-item"><a href="rejection.html" class="current">dwi rejection</a></div>
+<div class="menu-item"><a href="rejection2.html" class="current">amplitude nav dwi</a></div>
+<div class="menu-category">PERSONAL</div>
+<div class="menu-item"><a href="hobbies.html">Hobbies</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Diffusion-Prepared Imaging with Amplitude Navigation </h1>
+</div>
+
+<p>This article describes a new reconstruction approach for handling signal flucations due to shot-to-shot motion in diffusion prepared sequences. The SNR efficiency of a diffusion preparation
+  can be improved by ~50% compared to conventional methods, but there is an increase in the minimum sampling time to achieve accurate Apparent Diffusion Coefficients. 
+  This increase in SNR efficiency makes assumptions on the degree of subject motion, as well as the phase contributions from systematic errors such as eddy currents. 
+  I think this article has some nice analysis, as well as a characterization of a tricky B1 artifact that affects the DWI contrast.</p>
+
+<p>Python code that implements this reconstruction is <a href="https://github.com/ecat/ampnavdwi">available here</a>. </p>
+  
+<p><b>Lee PK</b>, Zhou X, Hargreaves BA. &ldquo;Diffusion-prepared imaging with amplitude navigation for correction of motion-induced signal loss,&rdquo; Magnetic Resonance in Medicine. 2025 <a href="https://doi.org/10.1002/mrm.30484">doi.org/10.1002/mrm.30484</a></p>
+
+<div id="footer">
+<div id="footer-text">
+</div>
+</div>
+</td>
+</tr>
+</table>
