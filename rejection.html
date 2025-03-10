@@ -38,11 +38,12 @@
 <h1>Shot Rejection for Robust Diffusion Weighted Imaging </h1>
 </div>
 <p>The set of equations used for multishot DWI reconstruction were written by <a href="https://doi.org/10.1002/mrm.10531">Miller et al.</a><sup>1</sup> (2003) and 
-<a href="https://doi.org/10.1002/mrm.20706">Liu et al.</a> (2006) and have gone untouched for 20-ish years<sup>2</sup>. </p>
+<a href="https://doi.org/10.1002/mrm.20706">Liu et al.</a> (2006) and have had little modification for 20-ish years<sup>2</sup>. </p>
 
-<p>Our article describes a modification to the multishot DWI reconstruction that accounts for scenarios where the phase navigator is inaccurate, a problem that occurs in almost every abdominal DWI scan. 
-Several mathematical justifications for this modification are analyzed. We also explicitly illustrate the importance of the phase navigator resolution, a critical parameter in both the acquisition and reconstruction that I have found the vast
-  majority of researchers to be unaware. I hope that this work will make "robustness to motion" a factor when evaluating new DWI acquisition methods.</p>
+<p>Our article describes a modification to the multishot DWI reconstruction that accounts for scenarios where the phase navigator is inaccurate, a problem that occurs in almost every abdominal DWI scan,
+and sometimes in other anatomies. Several mathematical justifications for this modification are analyzed. We also explicitly illustrate the importance of the phase navigator resolution, 
+a critical parameter in both acquisition and reconstruction that has
+been completely negelcted in the literature. I hope that this work will make "robustness to motion" a factor when evaluating new DWI acquisition methods.</p>
 
 <p>Python code that implements linear reconstructions for rejecting shots overly corrupted by motion in diffusion weighted imaging is <a href="https://github.com/ecat/rejectdwi">available here</a>. </p>
   
