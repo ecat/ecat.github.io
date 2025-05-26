@@ -41,9 +41,9 @@
 <a href="https://doi.org/10.1002/mrm.20706">Liu et al.</a> (2006) and have not been modified for 20-ish years<sup>2</sup>. </p>
 
 <p>Our article describes a modification to the multishot DWI reconstruction that accounts for scenarios where the phase navigator is inaccurate, a problem that occurs in almost every abdominal DWI scan,
-and sometimes in other anatomies. Several mathematical justifications for this modification are analyzed. We also explicitly illustrate the importance of the phase navigator resolution, 
+and sometimes in other anatomies. Several mathematical justifications for this modification are analyzed. We also explicitly illustrate the importance of the phase navigator resolution<sup>3</sup>, 
 a critical parameter in both acquisition and reconstruction that has
-been completely negelcted in the literature. I hope that this work will make "robustness to motion" a factor when evaluating new DWI acquisition methods.</p>
+been neglected in the literature. I hope that this work will make "robustness to motion" a factor when evaluating new DWI acquisition methods.</p>
 
 <p>Python code that implements linear reconstructions for rejecting shots overly corrupted by motion in diffusion weighted imaging is <a href="https://github.com/ecat/rejectdwi">available here</a>. </p>
   
@@ -54,8 +54,13 @@ and let's assume only 25% do DWI clinically, with 20 patients scanned per day, a
 (ignoring 1.5T scanners)! If we consider citations to be a measure of impact, then 248 seems relatively low compared to <a href="https://doi.org/10.1002/mrm.21391">MRI compressed sensing</a> 
 (~9,000 citations), which is not used nearly as widely in the clinic. </p>
 
-<p><sup>2</sup> <a href="https://doi.org/10.1016/j.neuroimage.2013.01.038">Multiplexed Sensitivity Encoding (MUSE)</a> (2016) provided the insight that parallel imaging could be used to reconstruct phase navigators
-   but did not change the underlying linear system. </p>
+<p><sup>2</sup> <a href="https://doi.org/10.1016/j.neuroimage.2013.01.038">Multiplexed Sensitivity Encoding (MUSE)</a> (2016) did not change the underlying linear system,
+  but is frequently attributed with having provided the insight that parallel imaging could be used to reconstruct phase navigators. However, I recently (May 2025) discovered <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.21176">this
+  article by Skare et al.</a> (2007) which applied coil sensitivities estimated from b = 0 s / mm<sup>2</sup> EPI images to reconstruct phase naviagtors for each shot.</p>
+
+<p><sup>3</sup> I also just discovered (May 2025) <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.22126"> this article by Uecker et al.</a> (2009) that explicitly talks about violation
+  of low-resolution phase assumptions, and has some nice examples in brain. However, this still only used phase navigators with magnitude 1. Sorry for not citing this!</p>
+  
 <div id="footer">
 <div id="footer-text">
 </div>
