@@ -55,11 +55,13 @@ and let's assume only 25% do DWI clinically, with 20 patients scanned per day, a
 (~9,000 citations), which is not used nearly as widely in the clinic. </p>
 
 <p><sup>2</sup> <a href="https://doi.org/10.1016/j.neuroimage.2013.01.038">Multiplexed Sensitivity Encoding (MUSE)</a> (2016) did not change the underlying linear system,
-  but is frequently attributed with having provided the insight that parallel imaging could be used to reconstruct phase navigators. However, I recently (May 2025) discovered <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.21176">this
-  article by Skare et al.</a> (2007) which applied coil sensitivities estimated from b = 0 s / mm<sup>2</sup> EPI images to reconstruct phase naviagtors for each shot.</p>
+  but is frequently attributed with having provided the insight that parallel imaging could be used to reconstruct phase navigators. I recently (May 2025) discovered <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.21176">this
+  article by Skare et al.</a> (2007) which applied coil sensitivities estimated from b = 0 s / mm<sup>2</sup> EPI images to reconstruct phase navigators for each shot followed by magnitude averaging.</p>
 
 <p><sup>3</sup> I also just discovered (May 2025) <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.22126"> this article by Uecker et al.</a> (2009) that explicitly talks about violation
-  of low-resolution phase assumptions, and has some nice examples in brain. However, this still only used phase navigators with magnitude 1. Sorry for not citing this!</p>
+  of low-resolution phase assumptions, and has some nice examples in brain (sorry for not citing this). However, they still only used phase navigators with magnitude 1. Interestingly, it also used coil 
+  sensitivities estimated from b = 0 s / mm<sup>2</sup> to reconstruct phase navigators and solve the full multi-shot problem as in MUSE! Perhaps the reason not much attention was paid
+to this is because EPI was not used, but the contributions from the 2016 MUSE article are pretty much all here.</p>
   
 <div id="footer">
 <div id="footer-text">
