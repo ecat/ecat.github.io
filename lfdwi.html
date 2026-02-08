@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QW05P0D2WL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QW05P0D2WL');
+</script>
+
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Multiband Low Field Diffusion Weighted Imaging</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">INFO</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="biography.html">Biography</a></div>
+<div class="menu-category">SOFTWARE</div>
+<div class="menu-item"><a href="adbs.html">auto diff crb</a></div>
+<div class="menu-item"><a href="rejection.html">dwi rejection</a></div>
+<div class="menu-item"><a href="ampnavdwi.html">ampnav dwi</a></div>
+<div class="menu-item"><a href="lfdwi.html" class="current">low field dwi</a></div>
+<div class="menu-category">PERSONAL</div>
+<div class="menu-item"><a href="hobbies.html">Hobbies</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Multiband Low Field Diffusion Weighted Imaging </h1>
+</div>
+
+<p>A DWI sequence using non-CPMG quadratic phase increment FSE that builds on some of my <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9732866/">older work</a>. It turns out that the quadratic phase increment FSE 
+  is especially well suited for low-field systems, and that the issues (namely higher SAR + desired for fast encoding) that I faced on conventional systems 
+  are not present with portable MRI.
+</p>
+
+<p>In this paper, I show how to account for additional phase sources arising from system imperfections that are prominent on portable systems. 
+  I also improved on the multiband RF-encoding schemes used for self-navigated DWI which I think was a bit of a low-hanging fruit that nobody
+noticed for 10 years. </p>
+  
+<p>I truly believe that if portable MRI takes off then this will be THE core approach for DWI. Compared to the previous papers describing DWI acquisitions 
+  on portable MRI systems, I estimate my approach gets the same image quality 5-10 times faster.
+</p>
+
+<p>MATLAB code that implements the reconstruction and calibration steps, and some sample datasets are <a href="https://github.com/ecat/lowfielddwi">available here</a>. </p>
+  
+
+<p><b>Lee PK</b>, Qiu Y, Chen S, Wang C, Zhiyong Z. &ldquo;Diffusion Weighted Fast Spin Echo with RF-Encoded Slabs for Portable Low-Field MRI Systems,&rdquo; Magnetic Resonance in Medicine. 2026. <a href="">DOI SOON</a></p>
+
+
+<div id="footer">
+<div id="footer-text">
+</div>
+</div>
+</td>
+</tr>
+</table>
