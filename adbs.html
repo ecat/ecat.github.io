@@ -41,7 +41,17 @@
 <p>Since the CRLB depends on the Jacobian of the signal with respect to the parameters of interest, we can use automatic differentiation (widely used in deep learning) and a simple Bloch simulation to efficiently compute the CRLB for any sequence that can be simulated. Furthermore, we can use automatic differentiation to compute the gradient of the CRLB objective with respect to sequence parameters (flip angle, TE, etc). <b>This allows us to optimize sequences without an analytical expression for the magnetization.</b></p>
 <p>This library provides implementations of the standard Bloch simulation operations (relaxation, RF, gradient spoiling) for use in automatic differentiation and examples of quantitative sequences that were optimized using this library.</p>
 <p>For Magnetic Resonance Fingerprinting, automatic differentiation allows us to compute the CRLB objective and the gradient of the CRLB objective very efficiently. Our implementation converges roughly 30&times; faster in terms of CPU hours and requires 10&times; fewer lines of code (when compared to analytically calculating CRLB).</p>
+
 <p><b>Lee PK</b>, Watkins LE, Anderson TI, Buonincontri G, Hargreaves BA. “Flexible and Efficient Optimization of Quantitative Sequences using Automatic Differentiation of Bloch Simulations,” Magnetic Resonance in Medicine. May 2019. <a href="https://doi.org/10.1002/mrm.27832">doi.org/10.1002/mrm.27832</a></p>
+
+
+<p><b>Update February 2026: </b>This was my first paper and looking back, it has done fairly well in terms of citations, and multiple people have benefited from
+  the code. </p>
+  
+  <p>
+  In terms of the paper, I would probably change the colour scheme in the T1/T2 maps to a perceptually uniform one. This article was also in review for a while with one reviewer hampering about novelty and insisting that I cite an arXiv preprint. 
+  Being more experienced now, I somewhat agree with one of there comments it should have been submitted as a Technical Note but also think it is acceptable as a (short) full article.
+</p>
 <div id="footer">
 <div id="footer-text">
 </div>
