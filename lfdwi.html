@@ -39,10 +39,10 @@
 <h1>Multiband Diffusion Weighted Imaging for <br>Portable Low Field MRI Scanners</h1>
 </div>
 
-<p>This is a DWI sequence using Patrick Le Roux's <a href="https://pubmed.ncbi.nlm.nih.gov/12036339/">non-CPMG quadratic phase increment FSE</a> readout
+<p>A DWI sequence using Patrick Le Roux's <a href="https://pubmed.ncbi.nlm.nih.gov/12036339/">non-CPMG quadratic phase increment FSE</a> readout
   that also builds on some of my <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9732866/">previous work</a>. It turns out that the quadratic phase increment FSE 
-  is especially well suited for low field systems, and that the issues (namely higher SAR + desire for fast encoding) that I faced on conventional systems 
-  are not present in portable MRI.
+  is especially well suited for low field systems since it uses spin echos, and that the issues (namely higher SAR + desire for fast encoding) 
+  that I faced on conventional systems are not present in portable MRI.
 </p>
 
 <p>In this paper, I show how to account for additional phase sources arising from system imperfections that are prominent on portable systems. 
@@ -50,7 +50,7 @@
 There's also a nice guide that breaks the implementation into steps if someone wants to reproduce this work. </p>
   
 <p>I truly believe that if portable MRI takes off then this will be <b>THE</b> core approach for DWI. Compared to the previous papers describing DWI acquisitions 
-  on portable MRI systems, I estimate the quadratic phase increment FSE is 5-10 times more SNR efficient.
+  on portable MRI systems, I estimate the quadratic phase increment FSE is 5-10&times; more SNR efficient.
 </p>
 
 <p>MATLAB code that implements the reconstruction and calibration steps, and some sample datasets are <a href="https://github.com/ecat/lowfielddwi">available here</a>. </p>

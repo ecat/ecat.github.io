@@ -50,7 +50,7 @@ a:active {
     padding-left: 8px;
     padding-right: 8px;
     font-size: 1.0em;
-    width: auto;
+    width: 120px;
     white-space: nowrap;
     text-align: left;
     vertical-align: top;
@@ -131,7 +131,7 @@ div.menu-item {
 
 div#toptitle {
 	padding-bottom: 0.2em;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.4em;
 	border-bottom: 3px double gray;
 }
 
