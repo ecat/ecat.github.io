@@ -10,7 +10,7 @@ body {
     background: white;
     /*font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;*/
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 110%;
+    font-size: 1.1em;
     padding-bottom: 8px;
     margin: 0;
     /*color: white;*/
@@ -178,13 +178,13 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 28px;
+	font-size: 1.6em;
 	max-width: 800px;
 }
 
 h2 {
 	padding-top: 0.5em;
-	font-size: 24px;
+	font-size: 1.4em;
 }
 
 h2 + h3 {
@@ -192,14 +192,14 @@ h2 + h3 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.2em;
     border-bottom: none;
     font-weight: normal;
 }
 
 p {
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 1.1em;
+	line-height: 1.3em;
 	margin-top: 0.0em;
 	margin-bottom: 0.8em;
 	padding: 0;
