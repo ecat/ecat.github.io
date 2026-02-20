@@ -40,23 +40,26 @@
 </div>
 
 <p>A DWI sequence using Patrick Le Roux's <a href="https://pubmed.ncbi.nlm.nih.gov/12036339/">non-CPMG quadratic phase increment FSE</a> readout
-  that also builds on some of my <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9732866/">previous work</a>. It turns out that the quadratic phase increment FSE 
-  is especially well suited for low field systems since it is spin-echo based, and that the issues (namely higher SAR + desire for fast encoding) 
-  that I faced on conventional systems are not present in portable MRI.
+  that also builds on some of my <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9732866/">previous work</a>. It turns out the quadratic phase increment FSE 
+  is especially well suited for low field systems since it is spin-echo based, and the issues (namely higher SAR + desire for fast encoding) 
+  that this sequence faces on superconducting systems are not present in portable MRI.
 </p>
 
 <p>This paper shows how to account for additional phase sources arising from system imperfections that are prominent on portable systems. 
-  I also improved on the multiband RF-encoding schemes used for self-navigated DWI which I think was a low-hanging fruit that has gone unnoticed. 
-There's also a nice guide that breaks the implementation into steps if someone wants to reproduce this work. </p>
+  I also improved the RF-encoding schemes used for self-navigated DWI which I think was a low-hanging fruit that had gone unnoticed. </p>
+
+  <p>
+Finally, there is a checklist that breaks the implementation into steps if someone attempts to reproduce this work. Programming sequences and acquiring data 
+can be technically challenging since each sequence and system has its own pecularities. Hopefully this checklist helps with that.</p>
   
-<p>I truly believe that if portable MRI takes off then this will be <b>THE</b> core approach for DWI. Compared to the previous papers describing DWI acquisitions 
+<p>I truly believe that if portable MRI takes off then this will be <b>THE</b> core approach for DWI. Compared to previous papers describing DWI acquisitions 
   on portable MRI systems, I estimate the quadratic phase increment FSE is 5-10&times; more SNR efficient.
 </p>
 
 <p>MATLAB code that implements the reconstruction and calibration steps, and some sample datasets are <a href="https://github.com/ecat/lowfielddwi">available here</a>. </p>
   
 <hr></hr>
-<p><b>Lee PK</b>, Qiu Y, Chen S, Wang C, Zhang Z. &ldquo;Diffusion weighted Fast Spin Echo with RF-encoded Slabs for portable low-field MRI systems,&rdquo; Magnetic Resonance in Medicine. 2026. <a href="">DOI SOON</a></p>
+<p><b>Lee PK</b>, Qiu Y, Chen S, Wang C, Zhang Z. &ldquo;Diffusion weighted Fast Spin Echo with RF-encoded slabs for portable low-field MRI systems,&rdquo; Magnetic Resonance in Medicine. 2026. <a href="">DOI SOON</a></p>
 <p><b>Lee PK</b>, Qiu Y, Wang C, Zhang Z. &ldquo;Multiband Fast Spin Echo on portable low-field systems,&rdquo; Magnetic Resonance in Medicine. 2025. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.70036">doi.org/10.1002/mrm.70036</a></p>
 <p><b>Lee PK</b>, Hargreaves BA. &ldquo;A joint linear reconstruction for multishot diffusion weighted non-Carr-Purcell-Meiboom-Gill fast spin echo with full signal,&rdquo; Magnetic Resonance in Medicine. July 2022. <a href="https://doi.org/10.1002/mrm.29393">doi.org/10.1002/mrm.29393</a> </p>
 
