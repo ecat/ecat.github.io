@@ -203,7 +203,7 @@ p {
 	margin-top: 0.0em;
 	margin-bottom: 0.8em;
 	padding: 0;
-	max-width: 800px;
+	max-width: 78ch;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	hyphens: auto;
@@ -425,3 +425,18 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+#customlist {
+	list-style-type: none;
+	counter-reset: elementcounter;
+	max-width: 800px;
+	padding-left: 10px;
+	font-size: 1.1em;
+	line-height: 1.3em;
+  }
+  
+  #customlist>li:before {
+	content: "J" counter(elementcounter) ". ";
+	/* increment counter */
+	counter-increment: elementcounter;
+  }
